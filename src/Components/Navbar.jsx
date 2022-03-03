@@ -1,5 +1,4 @@
 import React from "react";
-import img from "../assets/images/nav-img.png";
 
 export default function Navbar(props) {
   return (
@@ -8,7 +7,7 @@ export default function Navbar(props) {
       <div className="col-lg-7"></div>
       <div className="col-lg-3">
         {props.user.name}
-        <img src={img} />
+        <img src={props.user.url}  className="nav-img"/>
       </div>
     </div>
   );

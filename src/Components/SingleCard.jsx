@@ -5,7 +5,7 @@ export default function SingleCard(props) {
     <div className="single-card">
       <div className="row">
         <div className="col-lg-3">
-          <img src={map} className="map-img" />
+          <img src={props.imgUrl} className="map-img" />
         </div>
         <div className="col-lg-9">
           <div className="row">

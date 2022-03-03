@@ -16,6 +16,8 @@ export default function CardsDisplay(props) {
                 distance={item.distance}
                 city={item.city}
                 state={item.state}
+                imgUrl={item.map_url}
+
               />
             ))}
         </>
@@ -24,6 +26,7 @@ export default function CardsDisplay(props) {
           {props.uarr &&
             props.uarr.map((item) => (
               <SingleCard
+              key={item.id}
                 id={item.id}
                 origin={item.origin_station_code}
                 path={JSON.stringify(item.station_path)}
@@ -31,6 +34,9 @@ export default function CardsDisplay(props) {
                 distance={item.distance}
                 city={item.city}
                 state={item.state}
+                imgUrl={item.map_url}
+
+
               />
             ))}
         </>
@@ -46,6 +52,8 @@ export default function CardsDisplay(props) {
                 distance={item.distance}
                 city={item.city}
                 state={item.state}
+                imgUrl={item.map_url}
+
               />
             ))}
         </>
