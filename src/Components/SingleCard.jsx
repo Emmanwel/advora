@@ -1,5 +1,4 @@
 import React from "react";
-import map from "../assets/images/map.png";
 export default function SingleCard(props) {
   return (
     <div className="single-card">
