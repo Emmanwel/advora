@@ -22,9 +22,9 @@ function App() {
   const [map, setMap] = useState();
 
   useEffect(async () => {
-    await axios.get("http://localhost:4000/api/user").then(async (response) => {
+    await axios.get("https://suryaansh-edvora-backend.herokuapp.com/api/user").then(async (response) => {
       setUser(JSON.parse(response.data));
-      await axios.get("http://localhost:4000/api").then((res) => {
+      await axios.get("https://suryaansh-edvora-backend.herokuapp.com/api").then((res) => {
         const temp1 = JSON.parse(res.data);
         const arr = JSON.parse(res.data);
         var d;
