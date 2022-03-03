@@ -23,6 +23,10 @@ function App() {
   const [fCity, setFCity] = useState("");
   const [map, setMap] = useState();
 
+
+  //Since I was getting CORS error while attempting to fetch data
+  // directly from api. I created my own express server, and am sending request to your api 
+  // from that server, which I have deployed on heroku at: https://suryaansh-edvora-backend.herokuapp.com
   useEffect(async () => {
     //getting user data
     await axios
